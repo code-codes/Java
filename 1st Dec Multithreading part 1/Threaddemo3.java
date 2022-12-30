@@ -10,7 +10,7 @@ class MyThread extends Thread {
     }
     
 }
-public class Main
+public class Threaddemo3
 {
 	public static void main(String[] args) {
 	    MyThread t = new MyThread();
