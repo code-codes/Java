@@ -8,7 +8,7 @@ class MyThread extends Thread {
         System.out.println("No arg run method");
     }
 }
-public class Threaddemo3
+public class Threaddemo4
 {
 	public static void main(String[] args) {
 	    MyThread t = new MyThread();
