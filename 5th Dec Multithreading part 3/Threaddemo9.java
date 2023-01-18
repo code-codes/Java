@@ -1,4 +1,4 @@
-//Understanding priority of IllegalThreadStateException
+//Understanding priority of Threads
 
 import java.sql.*;
 
