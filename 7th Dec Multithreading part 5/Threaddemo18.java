@@ -4,6 +4,7 @@ class Display {
         ;
         ;
         ; // l-lakh lines of code
+        System.out.println("The thread which is getting the lock is: " + Thread.currentThread().getName());
         synchronized (this) {
             for (int i = 1; i <= 5; i++) {
                 System.out.print("Good morning:");
@@ -43,6 +44,10 @@ public class Threaddemo18 {
         Display d = new Display();
         MyThread t1 = new MyThread(d, "dhoni");
         MyThread t2 = new MyThread(d, "yuvi");
+        
+        t1.setName("dhoni");
+        t2.setName("yuvi");
+        
         t1.start();
         t2.start();
     }
