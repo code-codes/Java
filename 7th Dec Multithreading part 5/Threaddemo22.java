@@ -1,3 +1,4 @@
+class ThreadB extends Thread {
     
     int total =0;
     
