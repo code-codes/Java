@@ -8,6 +8,7 @@ public class Generics2
 		List<String> al2 =new ArrayList<String>();
         Collection<String> al3 =new ArrayList<String>();
         Collection<Object> al4 =new ArrayList<String>();//CE: incompatible types
+		ArrayList<int> al5 = new ArrayList<int>(); //CE
 		
 	}
 }
