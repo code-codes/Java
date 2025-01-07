@@ -18,7 +18,8 @@ public class LaunchDate2 {
         System.out.println(udate);
         System.out.println(sqlDate);
 
-
+        //if the user have entered date in this format, then we can convert it easily to sql date
+        //so, if we restrict this data format in frontend side, then the above steps are not necessary
         System.out.println("Enter date in yyyy-MM-dd format");
         String standardInput = sc.next();
         java.sql.Date s2date = java.sql.Date.valueOf(standardInput);
