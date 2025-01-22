@@ -1,12 +1,18 @@
 package service;
 
+import daofactory.StudentDaoFactory;
 import dto.Student;
+import persistence.IStudentDao;
+import servicefactory.StudentServiceFactory;
 
 public class StudentServiceImpl implements IStudentService{
 
+    IStudentDao studentDao;
+
     @Override
     public String addStudent(String sname, Integer sage, String saddress) {
-        return "";
+        studentDao = StudentDaoFactory.getStudentDao();
+        return studentDao.addStudent(sname, sage, saddress);
     }
 
     @Override
